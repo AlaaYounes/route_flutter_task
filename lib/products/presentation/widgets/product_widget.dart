@@ -24,7 +24,9 @@ class ProductWidget extends StatelessWidget {
               alignment: Alignment.topRight,
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15)),
                   child: Image.network(
                     product.thumbnail!,
                     errorBuilder: (context, error, stackTrace) =>

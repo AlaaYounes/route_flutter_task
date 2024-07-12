@@ -1,16 +1,28 @@
-# route_flutter_task
+# Product Display Screen
 
-A new Flutter project.
+This README provides an overview of the ProductDisplayScreen in our Flutter application, showcasing
+how it displays a list of beauty products to the user.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+**Product Listing**: Displays a grid of products, each with an image, name, price, and review
+rating.  
+**Product Details**: Each product card includes the product's image, name, current price, original
+price and a review rating.
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Viewing Products**: The screen displays products in a grid format, allowing users to easily browse
+through available items.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Customization
+
+**Data Source**: Update the product data source to fetch information from an API.
+
+## Example Scenario
+
+In an e-commerce application for beauty products, the ProductDisplayScreen allows users to browse
+through various items like mascara, eyeshadow palettes, powder canisters, and lipsticks.  
+The screen provides all the necessary information to make informed purchasing decisions, including
+current prices, discounts, and review ratings.  
+![Alt text](assets\images\example.jpg?raw=true)
