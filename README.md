@@ -25,4 +25,4 @@ In an e-commerce application for beauty products, the ProductDisplayScreen allow
 through various items like mascara, eyeshadow palettes, powder canisters, and lipsticks.  
 The screen provides all the necessary information to make informed purchasing decisions, including
 current prices, discounts, and review ratings.  
-![Alt text](assets\images\example.jpg?raw=true)
+![Alt text](D:\StudioProjects\route_flutter_task\assets\images\example.jpg)
