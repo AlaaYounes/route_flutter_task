@@ -8,10 +8,10 @@ import 'package:route_flutter_task/products/presentation/widgets/product_widget.
 
 class ProductListScreen extends StatelessWidget {
   ProductListScreen({super.key});
-  var searchController = TextEditingController();
+
+  final searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    ProductCubit cubit = ProductCubit.get(context);
     return Container(
       color: const Color(0xffFFFFFF),
       child: SafeArea(
@@ -58,7 +58,7 @@ class ProductListScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       Expanded(
                         child: GridView.builder(
@@ -70,7 +70,9 @@ class ProductListScreen extends StatelessWidget {
                                   childAspectRatio: .8),
                           itemCount: state.response.products!.length,
                           itemBuilder: (BuildContext context, int index) {
-                            return ProductWidget(product: state.response.products![index],);
+                            return ProductWidget(
+                              product: state.response.products![index],
+                            );
                           },
                         ),
                       ),

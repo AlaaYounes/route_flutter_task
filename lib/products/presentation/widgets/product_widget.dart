@@ -4,8 +4,9 @@ import 'package:route_flutter_task/core/utils/app_images.dart';
 import 'package:route_flutter_task/products/data/models/ProductResponseDTO.dart';
 
 class ProductWidget extends StatelessWidget {
-  Product product;
-  ProductWidget({super.key, required this.product});
+  final Product product;
+
+  const ProductWidget({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +70,7 @@ class ProductWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "EGP ${(product.price! - (product.price! * product.discountPercentage! / 100)).roundToDouble()}",
+                      "EGP ${(product.price! - (product.price! * product.discountPercentage! / 100)).toStringAsFixed(2)}",
                       style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     const SizedBox(width: 5),
